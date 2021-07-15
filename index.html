@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <img src="worldwide-location--v2.png" alt="logo" class="logo">
+            <img src="menu (1).png" alt="menuicon" class="menu" id="menuIcon">
+        </div>
+        <div class="text-box">
+            <h1>SHUTTER MENU DESIGN</h1>
+            <P>SUSCRIBER AMAN SHARMA TO GET NET WINDOW IN MAIN CIRCLE THAT AR EIN USUAU
+            </P>
+        </div>
+        <div class="row">
+            <div id="leftcol">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>CONATACT</li>
+                    <li>BOOKING</li>
+                    <li>PRIZE</li>
+
+
+                </ul>
+
+            </div>
+            <div id="rightcol">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-youtube"></i>
+
+                <img src="icons8-cross-mark-48.png" alt="" id="closeicon">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script>
+        var menuIcon = document.getElementById("menuIcon");
+        var closeIcon = document.getElementById("closeicon");
+        var leftcol = document.getElementById("leftcol");
+        var rightcol = document.getElementById("rightcol");
+        menuIcon.onclick = function() {
+            leftcol.style.transform = "translate(0px)";
+            rightcol.style.transform = "translate(0px)";
+
+        }
+        closeIcon.onclick = function() {
+            leftcol.style.transform = "translate(-100%)";
+            rightcol.style.transform = "translate(100%)";
+
+        }
+    </script>
+</body>
+
+</html>
